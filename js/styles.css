@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+}
+
+header {
+    background: linear-gradient(135deg, #7b0000, #c0392b);
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+}
+
+header h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 1rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.grid-objetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+}
+
+.tarjeta-objeto {
+    background-color: #16213e;
+    border-radius: 14px;
+    padding: 1.25rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-top: 4px solid #555;
+}
+
+.tarjeta-objeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+}
+
+.tarjeta-objeto.tipo-pasivo  { border-top-color: #5dade2; }
+.tarjeta-objeto.tipo-activo  { border-top-color: #f39c12; }
+.tarjeta-objeto.tipo-familiar { border-top-color: #2ecc71; }
+
+.cabecera-tarjeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.6rem;
+}
+
+.id-objeto {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.badge-tipo {
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    background-color: #2d2d4e;
+}
+
+.tipo-pasivo  .badge-tipo { color: #5dade2; }
+.tipo-activo  .badge-tipo { color: #f39c12; }
+.tipo-familiar .badge-tipo { color: #2ecc71; }
+
+.tarjeta-objeto h2 {
+    margin: 0 0 0.6rem 0;
+    font-size: 1.15rem;
+    color: #ffffff;
+}
+
+.descripcion {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin: 0 0 1rem 0;
+    line-height: 1.5;
+}
+
+.efecto {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0f3460;
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+}
+
+.stat {
+    color: #a0c4ff;
+    font-weight: bold;
+}
+
+.valor {
+    color: #f0c040;
+    font-weight: bold;
+}
+
+.mensaje,
+.error {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 2rem;
+    background-color: #16213e;
+    border-radius: 12px;
+    font-size: 1.1rem;
+}
+
+.error {
+    color: #e74c3c;
+    font-weight: bold;
+}
