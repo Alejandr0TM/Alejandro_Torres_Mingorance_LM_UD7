@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--
+    Hoja de estilos XSLT.
+    Transforma el documento XML de objetos de The Binding of Isaac en HTML.
+-->
 <xsl:stylesheet version="1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+    <!--
+        Indicamos que la salida será HTML con codificación UTF-8.
+    -->
     <xsl:output method="html" encoding="UTF-8" indent="yes"/>
 
+    <!--
+        Plantilla principal: se aplica desde la raíz del documento.
+    -->
     <xsl:template match="/">
         <html>
             <head>
@@ -51,6 +61,7 @@
                 <h1>The Binding of Isaac — Listado de objetos</h1>
 
                 <table>
+                    <!-- Cabecera de la tabla -->
                     <tr>
                         <th>ID</th>
                         <th>Nombre</th>
@@ -61,11 +72,13 @@
                         <th>Desbloqueado</th>
                     </tr>
 
+                    <!-- Recorremos cada nodo <objeto> dentro de <objetos> -->
                     <xsl:for-each select="objetos/objeto">
                         <tr>
-                            <td><xsl:value-of select="id"/></td>
+                            <td><xsl:value-of select="@id"/></td>
                             <td><xsl:value-of select="nombre"/></td>
                             <td>
+                                <!-- Aplicamos clase CSS según el tipo -->
                                 <xsl:choose>
                                     <xsl:when test="tipo = 'Pasivo'">
                                         <span class="tipo-pasivo"><xsl:value-of select="tipo"/></span>

@@ -40,6 +40,7 @@ main {
     gap: 1.25rem;
 }
 
+/* Tarjeta base */
 .tarjeta-objeto {
     background-color: #16213e;
     border-radius: 14px;
@@ -54,10 +55,12 @@ main {
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
 }
 
+/* Colores por tipo */
 .tarjeta-objeto.tipo-pasivo  { border-top-color: #5dade2; }
 .tarjeta-objeto.tipo-activo  { border-top-color: #f39c12; }
 .tarjeta-objeto.tipo-familiar { border-top-color: #2ecc71; }
 
+/* Cabecera de la tarjeta (ID + badge) */
 .cabecera-tarjeta {
     display: flex;
     justify-content: space-between;
@@ -82,12 +85,14 @@ main {
 .tipo-activo  .badge-tipo { color: #f39c12; }
 .tipo-familiar .badge-tipo { color: #2ecc71; }
 
+/* Nombre del objeto */
 .tarjeta-objeto h2 {
     margin: 0 0 0.6rem 0;
     font-size: 1.15rem;
     color: #ffffff;
 }
 
+/* Descripción */
 .descripcion {
     font-size: 0.9rem;
     color: #aaa;
@@ -95,6 +100,7 @@ main {
     line-height: 1.5;
 }
 
+/* Efecto: stat + valor */
 .efecto {
     display: flex;
     justify-content: space-between;
@@ -114,6 +120,7 @@ main {
     font-weight: bold;
 }
 
+/* Mensaje de carga y error */
 .mensaje,
 .error {
     grid-column: 1 / -1;

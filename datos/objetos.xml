@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objetos>
-    <objeto>
+    <objeto id="1">
         <nombre>Sad Onion</nombre>
-        <id>1</id>
         <tipo>Pasivo</tipo>
         <descripcion>Aumenta la velocidad de las lagrimas.</descripcion>
         <efecto>
@@ -12,9 +11,8 @@
         <desbloqueado>Si</desbloqueado>
     </objeto>
 
-    <objeto>
+    <objeto id="2">
         <nombre>The Inner Eye</nombre>
-        <id>2</id>
         <tipo>Pasivo</tipo>
         <descripcion>Disparo triple. Reduce la velocidad de las lagrimas.</descripcion>
         <efecto>
@@ -24,9 +22,8 @@
         <desbloqueado>Si</desbloqueado>
     </objeto>
 
-    <objeto>
+    <objeto id="3">
         <nombre>Spoon Bender</nombre>
-        <id>3</id>
         <tipo>Pasivo</tipo>
         <descripcion>Las lagrimas persiguen a los enemigos.</descripcion>
         <efecto>
@@ -36,9 +33,8 @@
         <desbloqueado>Si</desbloqueado>
     </objeto>
 
-    <objeto>
+    <objeto id="4">
         <nombre>Cricket's Head</nombre>
-        <id>4</id>
         <tipo>Pasivo</tipo>
         <descripcion>Aumenta el daño de forma considerable.</descripcion>
         <efecto>
@@ -48,9 +44,8 @@
         <desbloqueado>Si</desbloqueado>
     </objeto>
 
-    <objeto>
+    <objeto id="5">
         <nombre>My Reflection</nombre>
-        <id>5</id>
         <tipo>Pasivo</tipo>
         <descripcion>Las lagrimas rebotan y regresan hacia Isaac.</descripcion>
         <efecto>
@@ -60,9 +55,8 @@
         <desbloqueado>Si</desbloqueado>
     </objeto>
 
-    <objeto>
+    <objeto id="6">
         <nombre>Number One</nombre>
-        <id>6</id>
         <tipo>Pasivo</tipo>
         <descripcion>Aumenta mucho la velocidad de las lagrimas pero reduce el alcance.</descripcion>
         <efecto>
@@ -72,9 +66,8 @@
         <desbloqueado>Si</desbloqueado>
     </objeto>
 
-    <objeto>
+    <objeto id="7">
         <nombre>Blood of the Martyr</nombre>
-        <id>7</id>
         <tipo>Pasivo</tipo>
         <descripcion>Aumenta el daño. Las lagrimas se vuelven rojas.</descripcion>
         <efecto>
@@ -84,9 +77,8 @@
         <desbloqueado>Si</desbloqueado>
     </objeto>
 
-    <objeto>
+    <objeto id="8">
         <nombre>Brother Bobby</nombre>
-        <id>8</id>
         <tipo>Familiar</tipo>
         <descripcion>Invoca a Bobby, un familiar que dispara lagrimas normales a los enemigos.</descripcion>
         <efecto>
@@ -96,9 +88,8 @@
         <desbloqueado>Si</desbloqueado>
     </objeto>
 
-    <objeto>
+    <objeto id="9">
         <nombre>Dead Cat</nombre>
-        <id>9</id>
         <tipo>Pasivo</tipo>
         <descripcion>Establece los corazones en 1 pero otorga 9 vidas.</descripcion>
         <efecto>
@@ -108,9 +99,8 @@
         <desbloqueado>Si</desbloqueado>
     </objeto>
 
-    <objeto>
+    <objeto id="10">
         <nombre>Boom!</nombre>
-        <id>10</id>
         <tipo>Activo</tipo>
         <descripcion>Coloca una bomba en el centro de la habitacion.</descripcion>
         <efecto>
